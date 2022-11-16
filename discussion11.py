@@ -46,7 +46,7 @@ def create_patients_table(cur, conn):
 # ADD FLUFFLE TO THE TABLE
 def add_fluffle(cur, conn):
     cur.execute("INSERT INTO PATIENTS (pet_id, name, species_id, age, cuteness, aggressiveness) VALUES (?, ?, ?, ?, ?, ?)", (0, 'Fluffle', 0, 3, 90, 100))
-    # conn.commit()
+    conn.commit()
     
 
 # TASK 2
